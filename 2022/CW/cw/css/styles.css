@@ -1,0 +1,196 @@
+body {
+	background-color: rgb(237, 237, 237);
+	font-family: Helvetica, sans-serif;
+	margin: 0 0 0 0;
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	background-color: #006b09;
+	border-bottom: 5px solid #07b148;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	padding-left: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	color: white;
+	margin-bottom: 50px;
+}
+
+main {
+	width: 65%;
+	min-height: 80vh;
+	background-color: white;
+	float: left;
+	margin-left: 50px;
+	border: dashed 0.1rem #006b09;
+	border-radius: 15px;
+	box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+}
+
+main .head {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+main .head span {
+	border-bottom: 3px solid #07b148;
+	width: 90%;
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+main .container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+main .container .article {
+	width: 90%;
+	padding: 0 0 0 0;
+}
+
+main .container .article li {
+	list-style-type: none;
+	margin-bottom: 80px;
+}
+
+main .container .article li .category {
+	font-weight: bold;
+}
+
+main .container .article li .category::before {
+	content: "Категория: ";
+	font-weight: normal;
+}
+
+main .container .article li .author {
+	font-weight: bold;
+}
+
+main .container .article li .author::before {
+	content: "Автор: ";
+	font-weight: normal;
+}
+
+main .container .article .menuBlock {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+main .container .article .menuBlock .delBtn {
+	width: 120px;
+	height: 100%;
+	border: 0;
+	border-radius: 0.5rem;
+	background-color: #cf3a15;
+	margin-right: 30px;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+}
+
+main .container .article .menuBlock .arcBtn {
+	width: 100px;
+	height: 100%;
+	border: 0;
+	border-radius: 0.5rem;
+	background-color: #A3AE9E;
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+}
+
+aside {
+	width: 25%;
+	min-height: 80vh;
+	background-color: white;
+	float: right;
+	margin-right: 50px;
+	border: dashed 0.1rem #006b09;
+	border-radius: 15px;
+	box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+}
+
+aside .inputForm {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+aside .head {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+aside .head span {
+	border-bottom: 3px solid #07b148;
+	width: 100%;
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+aside .chapter {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+aside .chapter label {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+aside .chapter input {
+	width: 99%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #40493B;
+	font-size: 20px;
+}
+
+aside .chapter textarea {
+	width: 98%;
+	height: 250px;
+}
+
+aside .createBtn {
+	width: 30%;
+	height: 40px;
+	background-color: #006b09;
+	border: 0;
+	border-radius: 0.6rem;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+aside .archive {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+aside .archive ul{
+	padding-left: 20px;
+}
+
+aside .archive ul li {
+	margin-bottom: 20px;
+}

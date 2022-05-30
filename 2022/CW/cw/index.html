@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+		<head>
+		<meta charset="utf-8">
+		<title>Introdution Media Queries</title>
+		<script src="js/add.js"></script>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<header>Блог</header>
+		<main>
+			<div class="head"><span>Записи</span></div>
+			<div class="container">
+				<ul class="article" id="art">
+					<li>
+						<h2>Марк Цукерберг продемонстрировал работу VR гарнитуры Project Cambria</h2>
+						<p class="category">Технологии</p>
+						<p class="author">Иван Иванов</p>
+						<p>Глава Meta Марк Цукерберг опубликовал в Facebook видео работы VR-гарнитуры нового поколения, поддерживающей приложения виртуальной и дополненной реальности. На этапе разработки устройство носит название Project Cambria, а его выход может состояться уже в этом году.</p>
+						<div class="menuBlock" id="menuBlock">
+							<button class="delBtn">Удалить</button>
+							<button class="arcBtn">Архив</button>
+						</div>
+					</li>
+					<li>
+						<h2>Тест</h2>
+						<p class="category">Технологии</p>
+						<p class="author">Иван Иванов</p>
+						<p>Глава Meta Марк Цукерберг опубликовал в Facebook видео работы VR-гарнитуры нового поколения, поддерживающей приложения виртуальной и дополненной реальности. На этапе разработки устройство носит название Project Cambria, а его выход может состояться уже в этом году.</p>
+						<div class="menuBlock" id="menuBlock">
+							<button class="delBtn">Удалить</button>
+							<button class="arcBtn">Архив</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<aside>
+			<div class="inputForm">
+				<div class="head"><span>Создать запись</span></div>
+				<div class="chapter">
+					<label>Автор</label>
+					<input type="text" id="name">
+				</div>
+				<div class="chapter">
+					<label>Заголовок</label>
+					<input type="text" id="title">
+				</div>
+				<div class="chapter">
+					<label>Категория</label>
+					<input type="text" id="category">
+				</div>
+				<div class="chapter">
+					<label>Содержание</label>
+					<textarea id="content"></textarea>
+				</div>
+				<button class="createBtn" onclick="add()">Создать</button>
+			</div>
+			<div class="archive">
+				<div class="head"><span>Архив</span></div>
+				<ul id="titles">
+				</ul>
+			</div>
+		</aside>
+		<script src="js/delete.js"></script>
+		<script src="js/archive.js"></script>
+		<script>
+			window.onload = del();
+			window.onload = arc();
+		</script>
+	</body>
+</html>
